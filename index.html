@@ -5,6 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lakshmi Narayana CCTV Service</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- 🔍 SEO Meta Tags -->
+  <meta name="description" content="Lakshmi Narayana CCTV provides expert CCTV installation and maintenance services in Vijayawada. Bullet, Dome, AI cameras & more.">
+  <meta name="keywords" content="CCTV Vijayawada, security camera installation, AI surveillance, Bullet camera, Dome camera, PTZ camera, CCTV services">
+  <meta name="author" content="Lakshmi Narayana CCTV">
+
+  <!-- 🌐 Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Lakshmi Narayana CCTV Service",
+    "image": "https://kondaia.github.io/lakshminarayana/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ayyappa Nagar, Netaji Road",
+      "addressLocality": "Vijayawada",
+      "postalCode": "520007",
+      "addressCountry": "IN"
+    },
+    "telephone": "+918686556638",
+    "url": "https://kondaia.github.io/lakshminarayana/"
+  }
+  </script>
+
+  <!-- 🌟 Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
   <style>
     * {
       margin: 0;
@@ -32,6 +60,14 @@
     header h1 {
       font-size: 28px;
       letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    header h1 img {
+      height: 36px;
     }
 
     nav {
@@ -43,6 +79,11 @@
       text-decoration: none;
       margin: 0 15px;
       font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #25D366;
+      text-decoration: underline;
     }
 
     section {
@@ -121,14 +162,12 @@
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background: #25D366;
-      color: white;
-      padding: 15px;
-      border-radius: 50%;
-      font-size: 24px;
-      text-align: center;
-      text-decoration: none;
       z-index: 1000;
+    }
+
+    .whatsapp-float img {
+      height: 55px;
+      width: 55px;
     }
 
     footer {
@@ -136,6 +175,7 @@
       color: white;
       padding: 15px;
       font-size: 14px;
+      text-align: center;
     }
 
     @media screen and (max-width: 600px) {
@@ -148,13 +188,20 @@
         font-size: 22px;
         text-align: center;
       }
+
+      header h1 {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>LAKSHMI NARAYANA CCTV SERVICE</h1>
+  <h1>
+    <img src="logo.png" alt="Lakshmi Narayana Logo" />
+    LAKSHMI NARAYANA CCTV SERVICE
+  </h1>
   <nav>
     <a href="#services">Services</a>
     <a href="#about">About</a>
@@ -196,10 +243,25 @@
   <p><strong>Address:</strong><br>Ayyappa Nagar, Netaji Road, Vijayawada – 520007</p>
   <p><strong>Phone:</strong><br>86865 56638, 77804 00459</p>
   <a class="btn" href="https://wa.me/918686556638" target="_blank">💬 Chat on WhatsApp</a>
-  <p>Payments Accepted via <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/PhonePe_Logo.svg" alt="PhonePe Logo" height="22px" /></p>
+  <p>Payments Accepted via 
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/PhonePe_Logo.svg" alt="PhonePe Logo" height="22px" />
+  </p>
+
+  <!-- 🌍 Embedded Google Map -->
+  <iframe
+    src="https://www.google.com/maps?q=Ayyappa%20Nagar,%20Netaji%20Road,%20Vijayawada%20–%20520007&output=embed"
+    width="100%"
+    height="300"
+    style="border:0; margin-top:20px; border-radius:10px;"
+    allowfullscreen=""
+    loading="lazy"
+  ></iframe>
 </section>
 
-<a class="whatsapp-float" href="https://wa.me/918686556638" target="_blank">💬</a>
+<!-- 📱 Floating WhatsApp Button -->
+<a class="whatsapp-float" href="https://wa.me/918686556638" target="_blank">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp" />
+</a>
 
 <footer>
   &copy; 2025 Lakshmi Narayana CCTV Service | Powered by AI Security
