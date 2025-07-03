@@ -12,32 +12,38 @@
     }
     .container {
       max-width: 800px;
-      background: white;
+      background: #fff;
       margin: 40px auto;
       padding: 20px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       border-radius: 8px;
+      position: relative;
     }
     h1 {
       color: #002147;
+      margin-bottom: 5px;
     }
     h2 {
       color: #d10000;
+      margin-top: 0;
     }
     .logo {
-      float: right;
-      max-width: 180px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      max-width: 150px;
     }
     ul {
       line-height: 1.8;
+      padding-left: 20px;
     }
     .contact {
       margin-top: 20px;
-      font-size: 1.2em;
+      font-size: 1.1em;
     }
     .contact span {
-      display: inline-block;
-      margin-right: 15px;
+      display: block;
+      margin-bottom: 8px;
     }
     .footer {
       margin-top: 30px;
@@ -47,19 +53,42 @@
     .pay-logo {
       vertical-align: middle;
       height: 20px;
+      margin-left: 5px;
     }
     .whatsapp-icon {
       color: green;
       font-weight: bold;
+      margin-left: 5px;
+    }
+    .whatsapp-button {
+      display: inline-block;
+      margin: 20px 0;
+      text-decoration: none;
+    }
+    .whatsapp-button button {
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .whatsapp-button button:hover {
+      background-color: #1ebe5d;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img class="logo" src="https://i.imgur.com/ZxMDqZr.png" alt="CCTV" />
+    <img class="logo" src="https://i.imgur.com/ZxMDqZr.png" alt="CCTV Logo" />
     <h1>LAKSHMI NARAYANA</h1>
     <h2>CCTV SERVICE</h2>
     <p><strong>Your Trusted Security Partner</strong></p>
+
+    <a class="whatsapp-button" href="https://wa.me/918686556638" target="_blank" aria-label="Chat on WhatsApp">
+      <button>💬 Chat on WhatsApp</button>
+    </a>
 
     <ul>
       <li>Sales & Service of All Major CCTV Brands</li>
@@ -78,12 +107,14 @@
     </ul>
 
     <div class="contact">
-      <span><strong>📞 86865 56638</strong> <span class="whatsapp-icon">🟢 WhatsApp</span></span>
+      <span><strong>📞 86865 56638</strong><span class="whatsapp-icon">🟢 WhatsApp</span></span>
       <span><strong>📞 77804 00459</strong></span>
     </div>
 
     <div class="footer">
-      <p>Payments Accepted via <img class="pay-logo" src="https://upload.wikimedia.org/wikipedia/commons/f/f4/PhonePe_Logo.svg" alt="PhonePe"></p>
+      <p>Payments Accepted via 
+        <img class="pay-logo" src="https://upload.wikimedia.org/wikipedia/commons/f/f4/PhonePe_Logo.svg" alt="PhonePe Logo">
+      </p>
     </div>
   </div>
 </body>
