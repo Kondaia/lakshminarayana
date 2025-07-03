@@ -83,7 +83,7 @@
       line-height: 1.8;
     }
 
-    .images img {
+    .images img, .gallery img {
       width: 100%;
       border-radius: 8px;
       margin-top: 20px;
@@ -91,8 +91,14 @@
       transition: transform 0.3s;
     }
 
-    .images img:hover {
+    .images img:hover, .gallery img:hover {
       transform: scale(1.03);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
     }
 
     .contact, .footer {
@@ -150,6 +156,7 @@
   <nav>
     <a href="#services">Services</a>
     <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
@@ -166,10 +173,14 @@
     <li>Residential, Commercial & Industrial Installations</li>
     <li>AI Motion Detection and Smart Alerts</li>
   </ul>
+</section>
 
-  <div class="images">
-    <img src="https://img.freepik.com/premium-photo/cctv-camera-high-tech-digital-technology-security-system_31965-5479.jpg" alt="AI Security Camera" />
-    <img src="https://img.freepik.com/free-photo/hand-holding-cctv-camera-with-modern-building_23-2149271421.jpg" alt="Camera Installation">
+<section id="gallery">
+  <h3>Gallery</h3>
+  <div class="gallery">
+    <img src="pexels-obi-onyeador-1787470-13244978.jpg" alt="Indoor Smart CCTV Camera">
+    <img src="pexels-shox-31036015.jpg" alt="Pole-Mounted Outdoor CCTV">
+    <img src="pexels-jakubzerdzicki-24347621.jpg" alt="Modern Dome CCTV Camera">
   </div>
 </section>
 
