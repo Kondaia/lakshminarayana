@@ -6,12 +6,12 @@
   <title>Lakshmi Narayana CCTV Service</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- 🔍 SEO Meta Tags -->
-  <meta name="description" content="Lakshmi Narayana CCTV provides expert CCTV installation and maintenance services in Vijayawada. Bullet, Dome, AI cameras & more.">
-  <meta name="keywords" content="CCTV Vijayawada, security camera installation, AI surveillance, Bullet camera, Dome camera, PTZ camera, CCTV services">
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Lakshmi Narayana CCTV - Expert installation and maintenance of CCTV security systems in Vijayawada. Get a free quote today!">
+  <meta name="keywords" content="CCTV Vijayawada, security camera installation, AI surveillance, Bullet camera, Dome camera, PTZ camera">
   <meta name="author" content="Lakshmi Narayana CCTV">
 
-  <!-- 🌐 Structured Data for SEO -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -30,23 +30,16 @@
   }
   </script>
 
-  <!-- 🌟 Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" />
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
   <style>
-    * {
-      margin: 0;
-      padding: 0; 
-      scroll-behavior: smooth;
-      box-sizing: border-box;
-    }
-
     body {
       font-family: 'Roboto', sans-serif;
+      margin: 0;
       background: #f9f9f9;
       color: #222;
     }
-
     header {
       position: sticky;
       top: 0;
@@ -56,216 +49,137 @@
       text-align: center;
       z-index: 1000;
     }
-
     header h1 {
-      font-size: 28px;
-      letter-spacing: 1px;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 10px;
+      font-size: 24px;
     }
-
-    header h1 img {
-      height: 36px;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
     nav a {
       color: #fff;
-      text-decoration: none;
       margin: 0 15px;
+      text-decoration: none;
       font-weight: bold;
     }
-
     nav a:hover {
       color: #25D366;
-      text-decoration: underline;
     }
-
     section {
-      padding: 60px 20px;
-      max-width: 960px;
+      max-width: 1000px;
       margin: auto;
+      padding: 40px 20px;
     }
-
     .hero {
       background: url('hero.jpg') center/cover no-repeat;
       height: 300px;
-      position: relative;
       display: flex;
-      align-items: center;
       justify-content: center;
-      border-bottom: 4px solid #25D366;
+      align-items: center;
     }
-
     .hero h2 {
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0,0,0,0.6);
       color: #00ffcc;
-      padding: 20px 30px;
-      font-size: 30px;
+      padding: 20px;
       border-radius: 8px;
       text-shadow: 0 0 10px #00ffcc;
-      animation: fadeInDown 1s ease-in-out;
     }
-
-    @keyframes fadeInDown {
-      from {opacity: 0; transform: translateY(-30px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-
-    h3 {
-      margin-bottom: 20px;
-      color: #003366;
-    }
-
-    ul {
-      line-height: 1.8;
-    }
-
-    .images img, .gallery img {
-      width: 100%;
-      border-radius: 8px;
-      margin-top: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-
-    .images img:hover, .gallery img:hover {
-      transform: scale(1.03);
-    }
-
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
-
-    .contact, .footer {
-      text-align: center;
+    .gallery a img {
+      width: 100%;
+      border-radius: 8px;
     }
-
     .btn {
-      display: inline-block;
       background: #25D366;
-      color: white;
-      padding: 12px 20px;
+      color: #fff;
+      padding: 10px 20px;
       text-decoration: none;
       border-radius: 5px;
-      margin: 10px 0;
     }
-
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
       right: 20px;
       z-index: 1000;
     }
-
     .whatsapp-float img {
       height: 55px;
-      width: 55px;
     }
-
     footer {
       background: #003366;
       color: white;
-      padding: 15px;
-      font-size: 14px;
       text-align: center;
-    }
-
-    @media screen and (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-
-      .hero h2 {
-        font-size: 22px;
-        text-align: center;
-      }
-
-      header h1 {
-        flex-direction: column;
-      }
+      padding: 15px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1><img src="logo.png" alt="Logo" height="36"> LAKSHMI NARAYANA CCTV SERVICE</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<header>
-  <h1>
-    <img src="logo.png" alt="Lakshmi Narayana Logo" />
-    LAKSHMI NARAYANA CCTV SERVICE
-  </h1>
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <section class="hero">
+    <h2>Smarter. Safer. AI Surveillance</h2>
+  </section>
 
-<section class="hero">
-  <h2>Smarter. Safer. AI Surveillance</h2>
-</section>
+  <section id="services">
+    <h3>Our Services</h3>
+    <ul>
+      <li>Bullet, Dome, PTZ & Solar Cameras</li>
+      <li>AI Motion Detection and Alerts</li>
+      <li>Home, Business, School & Industry Solutions</li>
+      <li>Annual Maintenance Contracts (AMC)</li>
+    </ul>
+    <p><a class="btn" href="services.html">📋 View Full Services</a></p>
+  </section>
 
-<section id="services">
-  <h3>Our Services</h3>
-  <ul>
-    <li>Sales & Service of All Major CCTV Brands</li>
-    <li>Bullet, Dome, PTZ & Solar Cameras</li>
-    <li>Residential, Commercial & Industrial Installations</li>
-    <li>AI Motion Detection and Smart Alerts</li>
-  </ul>
-</section>
+  <section id="gallery">
+    <h3>Gallery</h3>
+    <div class="gallery">
+      <a href="indoor.jpg" class="glightbox" data-title="Indoor Smart Camera"><img src="indoor.jpg" alt="Indoor"></a>
+      <a href="outdoor.jpg" class="glightbox" data-title="Outdoor Setup"><img src="outdoor.jpg" alt="Outdoor"></a>
+      <a href="dome.jpg" class="glightbox" data-title="Dome AI Camera"><img src="dome.jpg" alt="Dome"></a>
+    </div>
+  </section>
 
-<section id="gallery">
-  <h3>Gallery</h3>
-  <div class="gallery">
-    <img src="indoor.jpg" alt="Indoor Smart CCTV Camera">
-    <img src="outdoor.jpg" alt="Outdoor CCTV">
-    <img src="dome.jpg" alt="Dome AI Camera">
-  </div>
-</section>
+  <section id="about">
+    <h3>About Us</h3>
+    <p>We are a trusted CCTV provider based in Vijayawada. We specialize in AI-powered and traditional camera systems for homes, offices, and institutions. Fast installation, affordable pricing, and 24/7 support.</p>
+  </section>
 
-<section id="about">
-  <h3>About Us</h3>
-  <p>We are a trusted CCTV security provider based in Vijayawada. With expertise in both traditional surveillance and AI-powered systems, we ensure 24/7 safety for homes, businesses, and industrial properties. Our solutions are fast, affordable, and built for the future.</p>
-</section>
+  <section id="contact">
+    <h3>Contact Us</h3>
+    <p><strong>Phone:</strong> 86865 56638, 77804 00459</p>
+    <p><strong>Address:</strong> Ayyappa Nagar, Vijayawada – 520007</p>
+    <a class="btn" href="https://wa.me/918686556638" target="_blank">💬 WhatsApp Us</a>
 
-<section id="contact">
-  <h3>Contact Us</h3>
-  <p><strong>Address:</strong><br>Ayyappa Nagar, Netaji Road, Vijayawada – 520007</p>
-  <p><strong>Phone:</strong><br>86865 56638, 77804 00459</p>
-  <a class="btn" href="https://wa.me/918686556638" target="_blank">💬 Chat on WhatsApp</a>
-  <p>Payments Accepted via 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/PhonePe_Logo.svg" alt="PhonePe Logo" height="22px" />
-  </p>
+    <h4>📨 Request a Free Quote</h4>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf_form_id/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
-  <!-- 🌍 Embedded Google Map -->
-  <iframe
-    src="https://www.google.com/maps?q=Ayyappa%20Nagar,%20Netaji%20Road,%20Vijayawada%20–%20520007&output=embed"
-    width="100%"
-    height="300"
-    style="border:0; margin-top:20px; border-radius:10px;"
-    allowfullscreen=""
-    loading="lazy"
-  ></iframe>
-</section>
+    <iframe src="https://www.google.com/maps?q=Ayyappa+Nagar,+Vijayawada&output=embed" width="100%" height="300" style="border:0; margin-top:20px; border-radius:10px;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
 
-<!-- 📱 Floating WhatsApp Button -->
-<a class="whatsapp-float" href="https://wa.me/918686556638" target="_blank">
-  <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp" />
-</a>
+  <a class="whatsapp-float" href="https://wa.me/918686556638" target="_blank">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp">
+  </a>
 
-<footer>
-  &copy; 2025 Lakshmi Narayana CCTV Service | Powered by AI Security
-</footer>
+  <footer>
+    &copy; 2025 Lakshmi Narayana CCTV Service | Vijayawada, India
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({ selector: '.glightbox' });
+  </script>
 </body>
 </html>
